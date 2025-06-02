@@ -42,8 +42,9 @@
             com a nossa comunidade!
           </strong>
         </p>
-        <button class="start-btn">COMECE AGORA</button>
-      </div>
+        <button class="start-btn" onclick="window.location='{{ route('ir.para.index') }}'">
+        COMECE AGORA
+    </button>      </div>
     </div>
   </main>
 
@@ -57,7 +58,6 @@
   <script>
     const imagesFromServer = [
       '{{ url('/images/avatar.jpg') }}',
-      '{{ url('/images/minecraft.jpg') }}',
       '{{ url('/images/titanic.jpg') }}',
       '{{ url('/images/vingadores.jpg') }}'
     ];
