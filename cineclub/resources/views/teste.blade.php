@@ -23,17 +23,13 @@
     </nav>
     <div class="search-box">
       <input type="text" placeholder="Pesquisar..." />
-      <button>🔍</button>
     </div>
   </header>
 
   <main>
     <div class="banner-container">
       <div class="carrossel-wrapper">
-        <div class="banner" id="carrossel">
-          <!-- Slides serão inseridos pelo JavaScript -->
-        </div>
-        <!-- Controles do carrossel -->
+        <div class="banner" id="carrossel"></div>
         <button class="carrossel-controle prev" aria-label="Slide anterior">❮</button>
         <button class="carrossel-controle next" aria-label="Próximo slide">❯</button>
         <div class="carrossel-indicators"></div>
@@ -58,6 +54,17 @@
       <img src="{{ url('/images/apple1.png') }}" alt="Apple" class="icon" />
     </p>
   </footer>
+
+  <!-- Passa o array das imagens para o JS -->
+  <script>
+    const imagesFromServer = [
+      '{{ url('/images/avatar.jpg') }}',
+      '{{ url('/images/minecraft.jpg') }}',
+      '{{ url('/images/titanic.jpg') }}',
+      '{{ url('/images/enrolados.jpg') }}',
+      '{{ url('/images/vingadores.jpg') }}'
+    ];
+  </script>
 
   <script src="{{ url('/js/app.js') }}"></script>
 </body>
