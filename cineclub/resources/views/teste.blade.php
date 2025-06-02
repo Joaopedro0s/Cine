@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="{{ url('/css/app.css') }}" />
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body> 
   <header>
     <div class="menu-icon">☰</div>
     <div class="logo">
@@ -54,14 +54,11 @@
       <img src="{{ url('/images/apple1.png') }}" alt="Apple" class="icon" />
     </p>
   </footer>
-
-  <!-- Passa o array das imagens para o JS -->
   <script>
     const imagesFromServer = [
       '{{ url('/images/avatar.jpg') }}',
       '{{ url('/images/minecraft.jpg') }}',
       '{{ url('/images/titanic.jpg') }}',
-      '{{ url('/images/enrolados.jpg') }}',
       '{{ url('/images/vingadores.jpg') }}'
     ];
   </script>
